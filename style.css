@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Koulen", cursive;
+}
+
+.Title {
+  text-align: center;
+  padding: 60px;
+  letter-spacing: 6px;
+  font-size: 7vw;
+}
+.Box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Box-grid {
+  height: 300px;
+  background: red;
+  margin: 20px;
+  border-radius: 10px;
+  background-image: url('./Image/house-two.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1500px) {
+    .Box-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+@media (max-width: 1000px) {
+  .Box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+    .Box-container {
+      display: grid;
+      grid-template-columns: 1fr ;
+    }
+  }
+  
